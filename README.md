@@ -2,6 +2,9 @@
 
 a tiny library 1k that only bothers with exif orientation
 
+yeah there where a bunch of other exif libraries, but they
+are all complicated and _we don't actually care_ about exif,
+we just want images to be the right way up!
 
 ## example
 
