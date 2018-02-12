@@ -7,7 +7,7 @@ module.exports = function (buffer) {
     var marker = view.getUint16(offset, false)
     offset += 2
     if (marker === 0xFFE1) {
-      if (view.getUint32(offset += 2, false) !== 0x45786966) return callback(-1)
+      if (view.getUint32(offset += 2, false) !== 0x45786966) return -1
       var little = view.getUint16(offset += 6, false) === 0x4949
       offset += view.getUint32(offset + 4, little)
       var tags = view.getUint16(offset, little)
